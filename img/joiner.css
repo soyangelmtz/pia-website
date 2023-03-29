@@ -7,11 +7,11 @@
   }
 
 :root {
-    --border: rgb(3, 169, 244);
+    --border: #dd8e16;
     
-    --g1: rgb(98, 0, 234);
-    --g2: rgb(236, 64, 122);
-    --g3: rgb(253, 216, 53);
+    --g1: #ff0140;
+    --g2: #890127;
+    --g3: #38293c;
 }
   
   nav {
@@ -40,7 +40,7 @@
     color: #dd8e16;
   }
   span {
-      text-decoration: none;
+    text-decoration: none;
     color: antiquewhite;
     font-size: larger;
   }
@@ -126,7 +126,8 @@
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      background-color: #eeeee4;
+      border-radius: 0px 0px 10px 10px;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       padding: 12px 16px;
@@ -149,7 +150,7 @@
   .tooltip .tooltiptext {
     visibility: hidden;
     width: auto;
-    background-color: rgba(0, 0, 0, 0.164);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     text-align:justify;
     padding: 5px 0;
@@ -236,7 +237,7 @@
   
   /* Projects Section Styles */
   #projects {
-      background-color: #333;
+      background-color: #961b1b;
       color: #fff;
       padding: 40px 20%;
   }
@@ -246,50 +247,13 @@
       margin-bottom: 20px;
   }
   
-  .project {
-      margin: 40px 0;
-  }
-  
-  .project img {
-      border-radius: 10px;
-      max-width: 100%;
-  }
-  
-  .project h3 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-  }
-  
-  .project p {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      margin-bottom: 20px;
-  }
-  
-  .project-button {
-      background-color: #fff;
-      border: none;
-      border-radius: 50px;
-      color: #333;
-      cursor: pointer;
-      font-size: 1.5rem;
-      padding: 10px 30px;
-      text-decoration: none;
-      transition: all 0.3s;
-  }
-  
-  .project-button:hover {
-      background-color: #333;
-      color: #fff;
-  }
-  
   .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   
-  .card {
+  .card{
     width: 30%;
     margin-bottom: 2rem;
     box-shadow: 0 0 10px rgba(189, 39, 39, 0.2);
@@ -321,6 +285,11 @@
     text-decoration: none;
   }
   
+  .card-container a {
+    text-decoration: none;
+  }
+
+
   /* Skills Section Styles */
   #skills {
       background-color: #fff;
@@ -366,17 +335,34 @@
 
 
   /* PROJECTS SECTION */
+
+section,
+ #projects{
+    padding: 100px;
+  }
+
+  h2{
+    padding: 0;
+    margin: 0;
+  }
+
 .card-container {
     display: flex;
     justify-content: space-between;
-    margin-inline-end: auto;
-}
+    margin-inline: 0px;
+    padding-inline: 0px;
+    padding: 10px;
+    margin: 10px;
+  }
   .card {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
     border: 0.5vmin solid var(--border);
     cursor: pointer;
     position: relative;
     width: 56vmin;
+    padding: 0;
   }
   
   .card:hover:before {
@@ -468,54 +454,4 @@
     z-index: 2;
   }
   
-  /* -- YouTube Link Styles -- */
   
-  #source-link {
-    top: 60px;
-  }
-  
-  #source-link > i {
-    color: rgb(94, 106, 210);
-  }
-  
-  #yt-link {  
-    top: 10px;
-  }
-  
-  #yt-link > i {
-    color: rgb(239, 83, 80);
-  }
-  
-  .meta-link {
-    align-items: center;
-    backdrop-filter: blur(3px);
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;  
-    display: inline-flex;
-    gap: 5px;
-    left: 10px;
-    padding: 10px 20px;
-    position: fixed;
-    text-decoration: none;
-    transition: background-color 350ms, border-color 350ms;
-    z-index: 10000;
-  }
-  
-  .meta-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  .meta-link > i, .meta-link > span {
-    height: 20px;
-    line-height: 20px;
-  }
-  
-  .meta-link > span {
-    color: white;
-    font-family: "Anek Latin", sans-serif;
-    transition: color 600ms;
-  }
